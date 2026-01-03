@@ -19,5 +19,7 @@ class Solution:
             counter+=1
         if counter > 0:
             counter_list.append(counter)
-        big_length = sorted(counter_list)[-1] if counter_list else 0
+
+        big_length = max(counter_list) if counter_list else 0
+        # big_length = sorted(counter_list)[-1] if counter_list else 0
         return big_length
